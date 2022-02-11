@@ -1,0 +1,91 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.border{
+   border: 1px solid black;
+
+}
+
+
+
+
+.gridsAreas{
+    display: grid;
+    grid-template-areas: 
+    "menu cabeza cabeza"
+    "menu productos productos"
+    "menu servicios servicios"
+    "menu pie  pie  ";
+  grid-template-columns: 10% auto 25%;
+  grid-template-rows: 100px 2fr 2fr 300px;
+ 
+}
+
+
+header{
+   grid-area: cabeza;
+   background-color: black;
+   color: white
+    
+}
+footer{
+    grid-area: pie;
+    background-color: black;
+    color: white
+   
+
+}
+#prodcutos{
+    grid-area: productos;
+    
+}
+#servicios{
+    grid-area: servicios;
+    
+}
+nav{
+    grid-area: menu;
+    background-color: black;
+    color: white
+ 
+
+     
+}
+
+
+
+#itemPadre{
+    position: relative;
+    word-spacing: 5px;
+    div{
+         background-color: rgb(29, 26, 26);
+         width: 188px;
+     padding: 20px 10px 10px 10px;
+     border:  solid rgb(255, 251, 251); 
+     text-align: center;
+     
+     
+     &:hover{
+        background-color: rgba(216, 76, 162, 0.247);
+  
+  
+      }
+     
+   
+   
+    }
+   
+
+
+    
+
+
+
+}
+
+// scss
+
+$negro:black

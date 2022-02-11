@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.border {
+  border: 1px solid black; }
+
+.gridsAreas {
+  display: grid;
+  grid-template-areas: "menu cabeza cabeza"
+ "menu productos productos"
+ "menu servicios servicios"
+ "menu pie  pie  ";
+  grid-template-columns: 10% auto 25%;
+  grid-template-rows: 100px 2fr 2fr 300px; }
+
+header {
+  grid-area: cabeza;
+  background-color: black;
+  color: white; }
+
+footer {
+  grid-area: pie;
+  background-color: black;
+  color: white; }
+
+#prodcutos {
+  grid-area: productos; }
+
+#servicios {
+  grid-area: servicios; }
+
+nav {
+  grid-area: menu;
+  background-color: black;
+  color: white; }
+
+#itemPadre {
+  position: relative;
+  word-spacing: 5px; }
+  #itemPadre div {
+    background-color: #1d1a1a;
+    width: 188px;
+    padding: 20px 10px 10px 10px;
+    border: solid #fffbfb;
+    text-align: center; }
+    #itemPadre div:hover {
+      background-color: rgba(216, 76, 162, 0.247); }
